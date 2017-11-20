@@ -5,7 +5,7 @@ android自定义图片剪裁组件；
 当前版本只实现了最基础的截图功能，更多功能还有待完善，当然你也可以自己拓展；	
 
 ## 使用    
-####布局文件中：	
+#### 布局文件中：	
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -28,18 +28,22 @@ android自定义图片剪裁组件；
         android:text="剪裁"/>
 </RelativeLayout>
 	
-####代码中：	
+#### 代码中：	
 imageCutView = (ImageCutView) this.findViewById(R.id.icv_main);		
 参数：	
+
 imageCutView.setOutputWidth(500);
 imageCutView.setOutputHeight(500);	
 传入原图：	
+
 imageCutView.setImageBitmap(bitmap);	
 裁剪图片：	
+
 Bitmap cutBitmap = imageCutView.cut();	
 
 ## 截图		
 
+[image](https://github.com/ZhangSir/CropImage/blob/master/Screenshot_2017-11-20-16-46-21-460_com.itzs.cropimage.png)
 
 
 
