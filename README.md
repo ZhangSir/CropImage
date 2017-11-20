@@ -30,20 +30,24 @@ android自定义图片剪裁组件；
 	
 #### 代码中：	
 imageCutView = (ImageCutView) this.findViewById(R.id.icv_main);		
+
 参数：	
 
-imageCutView.setOutputWidth(500);
+imageCutView.setOutputWidth(500);	
+
 imageCutView.setOutputHeight(500);	
+
 传入原图：	
 
 imageCutView.setImageBitmap(bitmap);	
+	
 裁剪图片：	
 
 Bitmap cutBitmap = imageCutView.cut();	
 
 ## 截图		
 
-[image](https://github.com/ZhangSir/CropImage/blob/master/Screenshot_2017-11-20-16-46-21-460_com.itzs.cropimage.png)
+![image1](https://github.com/ZhangSir/CropImage/blob/master/Screenshot_2017-11-20-16-46-21-460_com.itzs.cropimage.png)
 
 
 
