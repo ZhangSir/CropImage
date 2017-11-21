@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'//添加
 
 android {
     compileSdkVersion 26
@@ -29,4 +30,15 @@ dependencies {
     compile 'com.android.support:appcompat-v7:26.+'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
+}
+
+//添加发布到jcenter的配置信息
+publish {
+    userOrg = 'superz'//bintray.com用户名
+    repoName= 'android-Bitmap'//仓库名称
+    groupId = 'com.itz'//jcenter上的路径
+    artifactId = 'ImageCutter'//项目名称
+    publishVersion = '1.0.0'//版本号
+    desc = 'This is a simple tool for crop image.'//描述，不重要
+    website = 'https://github.com/ZhangSir/CropImage'//网站，不重要
 }
